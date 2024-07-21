@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            var type = DataAccess.GetDbType();
+            if (type != null) type.GetData();
         }
     }
 }
